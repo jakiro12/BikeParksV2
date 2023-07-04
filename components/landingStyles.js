@@ -1,0 +1,42 @@
+import { StyleSheet } from "react-native";
+
+export default stylesLogin = StyleSheet.create({
+    contianer:{
+        backgroundColor:'#523001',
+        width:'100%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'space-around',
+        alignItems:'center'
+    },
+    textBtn:{
+        color:'#000000',
+        fontSize:18,
+    },
+    btnSGetIn:{
+        width:100,
+        height:40,
+        borderColor:'#000000',
+        borderWidth:2,
+        borderRadius:10,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    infoContainer:{
+        width:'90%',
+        height:'50%',
+        borderColor:'#000000',
+        borderWidth:2,
+    },
+    btnContainer:{
+        width:'90%',
+        height:'30%',
+        borderWidth:2,
+        borderColor:'#000000',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
+    }
+})
