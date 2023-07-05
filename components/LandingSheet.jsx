@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AllProvincesBtns from "./GridButtonsProvinces/EachProvinceBtn.jsx";
 import SeeAllParksInBuenosAires from "./ProvinceDatas/BuenosAires/ParksList/ListOfParkAviables.jsx";
+import SeeAllParksInCaba from "./ProvinceDatas/Caba/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -35,6 +36,7 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="InfoApp" component={LandingPageInformation} />
             <Stack.Screen name="AllProvinces"  component={AllProvincesBtns}/>
             <Stack.Screen name="BuenosAiresParks" component={SeeAllParksInBuenosAires} />
+            <Stack.Screen name="Caba" component={SeeAllParksInCaba}/>
                 </Stack.Navigator>
             </NavigationContainer>
     )

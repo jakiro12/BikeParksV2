@@ -7,5 +7,8 @@ export default provinceStyles=StyleSheet.create({
         borderColor:'#000000',
         borderWidth:2,
         borderRadius:10,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between'
     }
 })

@@ -25,12 +25,12 @@ import TierraDelFuegoParks from "../ProvinceDatas/TierraDelFuego/TierraDelFuego.
 import TucumanParks from "../ProvinceDatas/Tucuman/Tucuman.jsx";
 export default function AllProvincesBtns (){
     return(
-        <View  style={styles.container}>
-        <StatusBar barStyle="dark-content" backgroundColor="#E3E4D3"  />
-        <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
-        <View style={styles.boxProvinces}>
-        <CabaParks/>
+      <View  style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#E3E4D3"  />
+      <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
+   <View style={styles.boxProvinces}>
         <BuenosAiresParks/>
+        <CabaParks/>
 </View>
 <View style={styles.boxProvinces}>
    <CatamarcaParks/>

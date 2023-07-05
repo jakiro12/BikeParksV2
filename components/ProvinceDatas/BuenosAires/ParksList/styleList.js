@@ -6,7 +6,50 @@ export default listParks=StyleSheet.create({
         height:'100%',
         display:'flex',
         flexDirection:'column',
-        justifyContent:'space-between',
-        backgroundColor:'#444444',
+        justifyContent:'center',
+        backgroundColor:'#03c04a',
+        alignItems:'center'
+     },
+     scrollContainer:{
+        width:'90%',
+        height:'90%'
+     },
+     parkBox:{
+        width:'95%',
+        height:150,
+        borderWidth:2,
+        borderColor:'#000000',
+        marginTop:10,
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center',
+     },
+     boxInfo:{
+        width:'48%',
+        height:'80%',
+        borderColor:'#000000',
+        borderWidth:2,
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'space-between'
+     },
+     boxPhoto:{
+        width:'40%',
+        height:'100%',
+        borderColor:'#000000',
+        borderWidth:2
+     },
+     btnUbication:{
+        width:'60%',
+        height:25,
+        backgroundColor:'#000000',
+        borderRadius:10,
+        display:'flex',
+        justifyContent:'center',
+        flexDirection:'row'
+     },
+     textUbication:{
+        color:'#ffffff'
      }
 })
