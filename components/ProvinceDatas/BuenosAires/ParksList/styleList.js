@@ -24,32 +24,36 @@ export default listParks=StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-around',
         alignItems:'center',
+        borderRadius:10,
+        backgroundColor:'#00000070'
      },
      boxInfo:{
         width:'48%',
         height:'80%',
-        borderColor:'#000000',
-        borderWidth:2,
         display:'flex',
         flexDirection:'column',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
      },
      boxPhoto:{
-        width:'40%',
-        height:'100%',
-        borderColor:'#000000',
-        borderWidth:2
+        width:'45%',
+        height:'95%',
      },
      btnUbication:{
         width:'60%',
         height:25,
-        backgroundColor:'#000000',
+        backgroundColor:'#03c04a',
         borderRadius:10,
         display:'flex',
         justifyContent:'center',
-        flexDirection:'row'
+        flexDirection:'row',
+        alignItems:'center'
      },
      textUbication:{
         color:'#ffffff'
+     },
+     imgStyles:{
+      width:'100%',
+      height:'100%',
+      resizeMode:'stretch',
      }
 })
