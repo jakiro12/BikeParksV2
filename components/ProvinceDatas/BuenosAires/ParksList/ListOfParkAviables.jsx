@@ -1,7 +1,9 @@
 import { View,Text,ScrollView,TouchableOpacity,Image,Modal } from "react-native";
 import styles from './styleList.js';
+import { useState } from "react";
 const {OpenMap,BikeParksData}=require('./MapParks')
 export default function SeeAllParksInBuenosAires (){
+    const[show,setShow] = useState('')
     return(
         <View style={styles.contianerList}>
           <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
@@ -13,16 +15,18 @@ export default function SeeAllParksInBuenosAires (){
                         <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.san_nicolas_de_los_arroyos)}>Ubicacion</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.boxPhoto}>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('sannico')}>
                     <Image source={require('../../../ImagesExamples/BuenosAires/sannico.jpg')} style={styles.imgStyles}/>
-                </View>
+                </TouchableOpacity>
                 <Modal 
-                visible={false}
+                animationType="none"
+                visible={show === 'sannico' ? true : false}
+                onRequestClose={() => { setShow('') } }
                 >
-                    <View>
-                        <Text>
-                            ModalFoto
-                        </Text>
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/sannico.jpg')} style={styles.imgStyles}/>
+                        </View>
                     </View>
                 </Modal>
             </View>

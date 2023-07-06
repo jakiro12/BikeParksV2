@@ -55,5 +55,18 @@ export default listParks=StyleSheet.create({
       width:'100%',
       height:'100%',
       resizeMode:'stretch',
+     },
+     modalContainer:{
+      width:'100%',
+      height:'100%',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center'
+     },
+     boxModalPhoto:{
+      width:'90%',
+      height:'55%',
+      borderColor:'#000000',
+      borderWidth:2,
      }
 })
