@@ -65,7 +65,7 @@ export default listParks=StyleSheet.create({
      },
      boxModalPhoto:{
       width:'90%',
-      height:'55%',
+      height:'50%',
       borderColor:'#000000',
       borderWidth:2,
      }
