@@ -1,12 +1,12 @@
 import { View,Text,ScrollView,TouchableOpacity,Image,Modal } from "react-native";
 import styles from './styleList.js';
 import { useState } from "react";
-const {OpenMap,BikeParksData}=require('./MapParks')
+const {OpenMap,BikeParksData}=require('./MapParks');
 export default function SeeAllParksInBuenosAires (){
     const[show,setShow] = useState('')
     return(
         <View style={styles.contianerList}>
-          <ScrollView style={styles.scrollContainer} decelerationRate={0.8} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
+          <ScrollView style={styles.scrollContainer} decelerationRate={0.9} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
             <View style={styles.parkBox}>
                 <View style={styles.boxInfo}>
                     <Text style={{color:'#ffffff'}}>Acasusso </Text>
@@ -1686,8 +1686,167 @@ export default function SeeAllParksInBuenosAires (){
                     </View>
                 </Modal>
             </View>
-            
-
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>25 de Mayo</Text>
+                    <Text style={{color:'#ffffff'}}>Mariano Rondeau 850</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.veinticinco_de_mayo)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('veinticinco_de_mayo')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/25demayo.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'veinticinco_de_mayo' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/25demayo.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa de Mayo</Text>
+                    <Text style={{color:'#ffffff'}}>Plaza Mailin</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_de_mayo)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_de_mayo')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/villademayo.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_de_mayo' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/villademayo.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Victoria</Text>
+                    <Text style={{color:'#ffffff'}}>Av Sobremonte 2629</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.victoria)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('victoria')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/victoria.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'victoria' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/victoria.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Valentin Alsina</Text>
+                    <Text style={{color:'#ffffff'}}>Plaza 20 de Junio</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.valentin_alsina)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('valentin_alsina')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/valentin.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'valentin_alsina' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/valentin.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Gesell</Text>
+                    <Text style={{color:'#ffffff'}}>Bv Gesell 1150</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_gesell)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_gesell')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/villagesell.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_gesell' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/villagesell.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Wilde</Text>
+                    <Text style={{color:'#ffffff'}}>San Carlos 500</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.wilde)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('wilde')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/wilde.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'wilde' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/wilde.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Zarate</Text>
+                    <Text style={{color:'#ffffff'}}>Rawson 900</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.zarate)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('zarate')}>
+                    <Image source={require('../../../ImagesExamples/BuenosAires/zarate.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'zarate' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/BuenosAires/zarate.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
           </ScrollView>
             </View>
     )

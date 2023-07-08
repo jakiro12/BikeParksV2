@@ -10,7 +10,7 @@ export default function BuenosAiresParks(){
                 <Text>Imagen</Text>
             </View>
         <Text>
-            Buenos Aires parques
+            Buenos Aires 
         </Text>
     </TouchableOpacity>
     )

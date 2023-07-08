@@ -10,7 +10,7 @@ export default function CabaParks(){
                 <Text>Imagen</Text>
             </View>
         <Text>
-           Caba parques
+           CABA
         </Text>
     </TouchableOpacity>
     )
