@@ -5,7 +5,7 @@ export default function CatamarcaParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('Catamarca')}>
             <View>
                 <Text>Imagen</Text>
             </View>
