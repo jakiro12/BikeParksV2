@@ -5,7 +5,7 @@ export default function ChubutParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('ChubutParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>

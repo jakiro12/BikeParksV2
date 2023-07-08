@@ -5,12 +5,12 @@ export default function ChacoParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('ChacoParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-            chaco parques
+            Chaco
         </Text>
     </TouchableOpacity>
     )

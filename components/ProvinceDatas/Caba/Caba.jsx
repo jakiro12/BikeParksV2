@@ -5,7 +5,7 @@ export default function CabaParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('Caba')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CabaParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>

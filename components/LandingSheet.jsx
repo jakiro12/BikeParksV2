@@ -6,6 +6,8 @@ import AllProvincesBtns from "./GridButtonsProvinces/EachProvinceBtn.jsx";
 import SeeAllParksInBuenosAires from "./ProvinceDatas/BuenosAires/ParksList/ListOfParkAviables.jsx";
 import SeeAllParksInCaba from "./ProvinceDatas/Caba/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInCatamarca from "./ProvinceDatas/Catamarca/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInChaco from "./ProvinceDatas/Chaco/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInChubut from "./ProvinceDatas/Chubut/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -37,9 +39,12 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="InfoApp" component={LandingPageInformation} />
             <Stack.Screen name="AllProvinces"  component={AllProvincesBtns}/>
             <Stack.Screen name="BuenosAiresParks" component={SeeAllParksInBuenosAires} />
-            <Stack.Screen name="Caba" component={SeeAllParksInCaba}/>
-            <Stack.Screen name="Catamarca" component={SeeAllParksInCatamarca}/>
-                </Stack.Navigator>
+            <Stack.Screen name="CabaParks" component={SeeAllParksInCaba}/>
+            <Stack.Screen name="CatamarcaParks" component={SeeAllParksInCatamarca}/>
+            <Stack.Screen name="ChacoParks" component={SeeAllParksInChaco}/>
+            <Stack.Screen name="ChubutParks" component={SeeAllParksInChubut}/>
+            
+            </Stack.Navigator>
             </NavigationContainer>
     )
 }
