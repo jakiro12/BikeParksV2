@@ -8,6 +8,7 @@ import SeeAllParksInCaba from "./ProvinceDatas/Caba/ParkList/ListOfParksAviables
 import SeeAllParksInCatamarca from "./ProvinceDatas/Catamarca/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInChaco from "./ProvinceDatas/Chaco/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInChubut from "./ProvinceDatas/Chubut/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInCordoba from "./ProvinceDatas/Cordoba/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -43,6 +44,7 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="CatamarcaParks" component={SeeAllParksInCatamarca}/>
             <Stack.Screen name="ChacoParks" component={SeeAllParksInChaco}/>
             <Stack.Screen name="ChubutParks" component={SeeAllParksInChubut}/>
+            <Stack.Screen name="CordobaParks" component={SeeAllParksInCordoba}/>
             
             </Stack.Navigator>
             </NavigationContainer>
