@@ -169,6 +169,305 @@ export default function SeeAllParksInCordoba (){
                     </View>
                 </Modal>
             </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>General Deheza</Text>
+                    <Text style={{color:'#ffffff'}}>Chaco</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.general_deheza)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('general_deheza')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/deheza.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'general_deheza' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/deheza.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>La Calera</Text>
+                    <Text style={{color:'#ffffff'}}>Av Simon Boliva 300</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.la_calera)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('la_calera')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/calera.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'la_calera' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/calera.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Jesus Maria</Text>
+                    <Text style={{color:'#ffffff'}}>Cleto Peña 100</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.jesus_maria)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('jesus_maria')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/jesusmaria.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'jesus_maria' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/jesusmaria.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Rio Cuarto</Text>
+                    <Text style={{color:'#ffffff'}}>Las Heras 5800</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.rio_cuarto)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('rio_cuarto')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/cuarto.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'rio_cuarto' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/cuarto.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>San Francisco</Text>
+                    <Text style={{color:'#ffffff'}}>Av Cervantes 3270</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.san_francisco)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('san_francisco')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/sanf.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'san_francisco' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/sanf.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Tanti</Text>
+                    <Text style={{color:'#ffffff'}}>Av San Martin 439</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.tanti)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('tanti')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/tanti.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'tanti' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/tanti.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Unquillo</Text>
+                    <Text style={{color:'#ffffff'}}>Esteban Echeverria 120</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.unquillo)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('unquillo')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/unquillo.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'unquillo' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/unquillo.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Allende</Text>
+                    <Text style={{color:'#ffffff'}}>Esteban Echeverria 120</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_allende)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_allende')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/allende.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_allende' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/allende.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Carlos Paz</Text>
+                    <Text style={{color:'#ffffff'}}>Av Arturo Umberto Illia 1919</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_carlos_paz)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_carlos_paz')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/carlospaz.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_carlos_paz' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/carlospaz.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa del Totoral</Text>
+                    <Text style={{color:'#ffffff'}}>Dr Rene Favaloro</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_del_totoral)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_del_totoral')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/totoral.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_del_totoral' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/totoral.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Maria</Text>
+                    <Text style={{color:'#ffffff'}}>Antonio Sobral 550</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_maria)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_maria')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/maria.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_maria' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/maria.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Parque Siquiman</Text>
+                    <Text style={{color:'#ffffff'}}>Pan de Azucar</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_parque_siquiman)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_parque_siquiman')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/siquiman.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_parque_siquiman' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/siquiman.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Villa Saldan</Text>
+                    <Text style={{color:'#ffffff'}}>Lima 149</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.villa_saldan)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('villa_saldan')}>
+                    <Image source={require('../../../ImagesExamples/Cordoba/saldan.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'villa_saldan' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Cordoba/saldan.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
             </ScrollView>
         </View>
     )

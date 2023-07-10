@@ -5,12 +5,12 @@ export default function CorrientesParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CorrientesParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-            corrientes parques
+            Corrientes
         </Text>
     </TouchableOpacity>
     )
