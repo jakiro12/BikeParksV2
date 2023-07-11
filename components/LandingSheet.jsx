@@ -11,6 +11,7 @@ import SeeAllParksInChubut from "./ProvinceDatas/Chubut/ParkList/ListOfParksAvia
 import SeeAllParksInCordoba from "./ProvinceDatas/Cordoba/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInCorrientes from "./ProvinceDatas/Corrientes/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInEntreRios from "./ProvinceDatas/EntreRios/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInFormosa from "./ProvinceDatas/Formosa/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -49,6 +50,7 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="CordobaParks" component={SeeAllParksInCordoba}/>
             <Stack.Screen name="CorrientesParks" component={SeeAllParksInCorrientes}/>
             <Stack.Screen name="EntreRiosParks" component={SeeAllParksInEntreRios}/>
+            <Stack.Screen name="FormosaParks" component={SeeAllParksInFormosa}/>
             
             </Stack.Navigator>
             </NavigationContainer>
