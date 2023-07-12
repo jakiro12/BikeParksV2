@@ -20,6 +20,10 @@ import SeeAllParksInMisiones from "./ProvinceDatas/Misiones/ParkList/ListOfParks
 import SeeAllParksInNeuquen from "./ProvinceDatas/Neuquen/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInRioNegro from "./ProvinceDatas/RioNegro/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInSalta from "./ProvinceDatas/Salta/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSanJuan from "./ProvinceDatas/SanJuan/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSanLuis from "./ProvinceDatas/SanLuis/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSantaCruz from "./ProvinceDatas/SantaCruz/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSantaFe from "./ProvinceDatas/SantaFe/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -67,8 +71,10 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="NeuquenParks" component={SeeAllParksInNeuquen}/>
             <Stack.Screen name="RioNegroParks" component={SeeAllParksInRioNegro}/>
             <Stack.Screen name="SaltaParks" component={SeeAllParksInSalta}/>
-
-
+            <Stack.Screen name="SanJuanParks" component={SeeAllParksInSanJuan}/>
+            <Stack.Screen name="SanLuisParks" component={SeeAllParksInSanLuis}/>
+            <Stack.Screen name="SantaCruzParks" component={SeeAllParksInSantaCruz}/>
+            <Stack.Screen name="SantaFeParks" component={SeeAllParksInSantaFe}/>
             
             </Stack.Navigator>
             </NavigationContainer>
