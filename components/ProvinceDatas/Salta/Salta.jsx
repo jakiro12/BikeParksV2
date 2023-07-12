@@ -5,12 +5,12 @@ export default function SaltaParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('SaltaParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-           Salta parques
+           Salta
         </Text>
     </TouchableOpacity>
     )

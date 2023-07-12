@@ -18,6 +18,8 @@ import SeeAllParksInLaRioja from "./ProvinceDatas/LaRioja/ParkList/ListOfParksAv
 import SeeAllParksInMendoza from "./ProvinceDatas/Mendoza/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInMisiones from "./ProvinceDatas/Misiones/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInNeuquen from "./ProvinceDatas/Neuquen/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInRioNegro from "./ProvinceDatas/RioNegro/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSalta from "./ProvinceDatas/Salta/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -63,6 +65,9 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="MendozaParks" component={SeeAllParksInMendoza}/>
             <Stack.Screen name="MisionesParks" component={SeeAllParksInMisiones}/>
             <Stack.Screen name="NeuquenParks" component={SeeAllParksInNeuquen}/>
+            <Stack.Screen name="RioNegroParks" component={SeeAllParksInRioNegro}/>
+            <Stack.Screen name="SaltaParks" component={SeeAllParksInSalta}/>
+
 
             
             </Stack.Navigator>

@@ -5,12 +5,12 @@ export default function RioNegroParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('RioNegroParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-           rio negro parques
+           Rio Negro
         </Text>
     </TouchableOpacity>
     )
