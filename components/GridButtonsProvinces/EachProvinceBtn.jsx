@@ -23,6 +23,7 @@ import SantaCruzParks from "../ProvinceDatas/SantaCruz/SantaCruz.jsx";
 import SantiagoDelEsteroParks from "../ProvinceDatas/SantiagoDelEstero/SantiagoDelEstero.jsx";
 import TierraDelFuegoParks from "../ProvinceDatas/TierraDelFuego/TierraDelFuego.jsx";
 import TucumanParks from "../ProvinceDatas/Tucuman/Tucuman.jsx";
+import MisionesParks from "../ProvinceDatas/Misiones/Misiones.jsx";
 export default function AllProvincesBtns (){
     return(
       <View  style={styles.container}>
@@ -54,25 +55,26 @@ export default function AllProvincesBtns (){
 </View>
 <View style={styles.boxProvinces}>
     <MendozaParks/>
+    <MisionesParks/>
+</View>
+<View style={styles.boxProvinces}>
     <NeuquenaParks/>
-</View>
-<View style={styles.boxProvinces}>
     <RioNegroParks/>
+</View>
+<View style={styles.boxProvinces}>
     <SaltaParks/>
-</View>
-<View style={styles.boxProvinces}>
     <SanJuanParks/>
+</View>
+<View style={styles.boxProvinces}>
     <SanLuisParks/>
-</View>
-<View style={styles.boxProvinces}>
     <SantaCruzParks/>
+</View>
+<View style={styles.boxProvinces}>
     <SantaFeParks/>
-</View>
-<View style={styles.boxProvinces}>
     <SantiagoDelEsteroParks/>
-    <TierraDelFuegoParks/>
 </View>
 <View style={styles.boxProvinces}>
+    <TierraDelFuegoParks/>
     <TucumanParks/>
 </View>
         </ScrollView>

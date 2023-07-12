@@ -10,6 +10,6 @@ export default provinceStyles=StyleSheet.create({
         display:'flex',
         flexDirection:'column',
         justifyContent:'space-between',
-        alignItems:'center',
+        alignItems:'center'
     }
 })

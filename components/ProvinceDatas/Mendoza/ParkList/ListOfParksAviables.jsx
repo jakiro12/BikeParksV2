@@ -100,6 +100,75 @@ export default function SeeAllParksInMendoza (){
                     </View>
                 </Modal>
             </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Parque Higgins</Text>
+                    <Text style={{color:'#ffffff'}}>Ituzaingo 1724</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.parque_higgins)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('parque_higgins')}>
+                    <Image source={require('../../../ImagesExamples/Mendoza/parque.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'parque_higgins' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Mendoza/parque.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Plaza Irigoyen</Text>
+                    <Text style={{color:'#ffffff'}}>Av Bartolome Mitre 5500</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.plaza_irigoyen)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('plaza_irigoyen')}>
+                    <Image source={require('../../../ImagesExamples/Mendoza/irigoyen.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'plaza_irigoyen' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Mendoza/irigoyen.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
+            <View style={styles.parkBox}>
+                <View style={styles.boxInfo}>
+                    <Text style={{color:'#ffffff'}}>Rivadavia</Text>
+                    <Text style={{color:'#ffffff'}}>Jose M. Estrada 525</Text>
+                    <TouchableOpacity style={styles.btnUbication}>
+                        <Text style={styles.textUbication} onPress={()=>OpenMap(BikeParksData.rivadavia)}>Ubicacion</Text>
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity style={styles.boxPhoto} onPress={()=>setShow('rivadavia')}>
+                    <Image source={require('../../../ImagesExamples/Mendoza/riva.jpg')} style={styles.imgStyles}/>
+                </TouchableOpacity>
+                <Modal 
+                animationType="none"
+                visible={show === 'rivadavia' ? true : false}
+                onRequestClose={() => { setShow('') } }
+                >
+                    <View style={styles.modalContainer}>
+                        <View style={styles.boxModalPhoto}>
+                        <Image source={require('../../../ImagesExamples/Mendoza/riva.jpg')} style={styles.imgStyles}/>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
             </ScrollView>
         </View>
     )
