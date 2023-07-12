@@ -5,12 +5,12 @@ export default function JujuyParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('JujuyParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-          jujuy parques
+          Jujuy
         </Text>
     </TouchableOpacity>
     )

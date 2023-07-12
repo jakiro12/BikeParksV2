@@ -5,12 +5,12 @@ export default function LaPampaParks(){
     const navigation=useNavigation()
 
     return(
-        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('BuenosAiresParks')}>
+        <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('LaPampaParks')}>
             <View>
                 <Text>Imagen</Text>
             </View>
         <Text>
-           La Pampa parques
+           La Pampa
         </Text>
     </TouchableOpacity>
     )

@@ -12,6 +12,10 @@ import SeeAllParksInCordoba from "./ProvinceDatas/Cordoba/ParkList/ListOfParksAv
 import SeeAllParksInCorrientes from "./ProvinceDatas/Corrientes/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInEntreRios from "./ProvinceDatas/EntreRios/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInFormosa from "./ProvinceDatas/Formosa/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInJujuy from "./ProvinceDatas/Jujuy/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInLaPampa from "./ProvinceDatas/LaPampa/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInLaRioja from "./ProvinceDatas/LaRioja/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInMendoza from "./ProvinceDatas/Mendoza/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -51,6 +55,10 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="CorrientesParks" component={SeeAllParksInCorrientes}/>
             <Stack.Screen name="EntreRiosParks" component={SeeAllParksInEntreRios}/>
             <Stack.Screen name="FormosaParks" component={SeeAllParksInFormosa}/>
+            <Stack.Screen name="JujuyParks" component={SeeAllParksInJujuy}/>
+            <Stack.Screen name="LaPampaParks" component={SeeAllParksInLaPampa}/>
+            <Stack.Screen name="LaRiojaParks" component={SeeAllParksInLaRioja}/>
+            <Stack.Screen name="MendozaParks" component={SeeAllParksInMendoza}/>
             
             </Stack.Navigator>
             </NavigationContainer>
