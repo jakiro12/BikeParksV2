@@ -9,6 +9,7 @@ export default provinceStyles=StyleSheet.create({
         borderRadius:10,
         display:'flex',
         flexDirection:'column',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        alignItems:'center'
     }
 })

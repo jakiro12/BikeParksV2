@@ -24,6 +24,9 @@ import SeeAllParksInSanJuan from "./ProvinceDatas/SanJuan/ParkList/ListOfParksAv
 import SeeAllParksInSanLuis from "./ProvinceDatas/SanLuis/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInSantaCruz from "./ProvinceDatas/SantaCruz/ParkList/ListOfParksAviables.jsx";
 import SeeAllParksInSantaFe from "./ProvinceDatas/SantaFe/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInSantiagoDelEstero from "./ProvinceDatas/SantiagoDelEstero/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInTierraDelFuego from "./ProvinceDatas/TierraDelFuego/ParkList/ListOfParksAviables.jsx";
+import SeeAllParksInTucuman from "./ProvinceDatas/Tucuman/ParkList/ListOfParksAviables.jsx";
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
@@ -75,7 +78,9 @@ export default function NavigationPagesAndSheet (){
             <Stack.Screen name="SanLuisParks" component={SeeAllParksInSanLuis}/>
             <Stack.Screen name="SantaCruzParks" component={SeeAllParksInSantaCruz}/>
             <Stack.Screen name="SantaFeParks" component={SeeAllParksInSantaFe}/>
-            
+            <Stack.Screen name="SantiagoDelEsteroParks" component={SeeAllParksInSantiagoDelEstero}/>
+            <Stack.Screen name="TierraDelFuegoParks" component={SeeAllParksInTierraDelFuego}/>
+            <Stack.Screen name="TucumanParks" component={SeeAllParksInTucuman}/>
             </Stack.Navigator>
             </NavigationContainer>
     )
