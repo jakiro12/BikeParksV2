@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './catamarcaStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function CatamarcaParks(){
@@ -6,10 +6,10 @@ export default function CatamarcaParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CatamarcaParks')}>
-            <View>
-                <Text>Imagen</Text>
+            <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/pCatamarca.jpg')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            Catamarca
         </Text>
     </TouchableOpacity>
