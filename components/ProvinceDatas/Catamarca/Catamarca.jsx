@@ -7,7 +7,7 @@ export default function CatamarcaParks(){
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CatamarcaParks')}>
             <View style={styles.imgContainer}>
-            <Image source={require('../../ImagesExamples/LogosProvincias/pCatamarca.jpg')} style={styles.imgLogoSize} />
+            <Image source={require('../../ImagesExamples/LogosProvincias/catamarcaTint.png')} style={styles.imgLogoSize} />
             </View>
         <Text style={styles.provinceName}>
            Catamarca

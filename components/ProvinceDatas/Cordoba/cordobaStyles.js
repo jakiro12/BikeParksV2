@@ -21,6 +21,7 @@ export default provinceStyles=StyleSheet.create({
         width:'100%',
       height:'100%',
       resizeMode:'stretch',
+      tintColor:'#ffffff'
     },
     provinceName:{
         fontSize:20

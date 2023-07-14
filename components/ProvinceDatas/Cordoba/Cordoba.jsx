@@ -7,7 +7,7 @@ export default function CordobaParks(){
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CordobaParks')}>
             <View style={styles.imgContainer}>
-                <Image source={require('../../ImagesExamples/LogosProvincias/pCordoba.jpg')} style={styles.imgLogoSize} />
+                <Image source={require('../../ImagesExamples/LogosProvincias/cordobaTint.png')} style={styles.imgLogoSize} />
             </View>
         <Text style={styles.provinceName}>
            Cordoba
