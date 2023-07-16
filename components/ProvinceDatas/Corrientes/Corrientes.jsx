@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './corrientesStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function CorrientesParks(){
@@ -6,10 +6,10 @@ export default function CorrientesParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('CorrientesParks')}>
-            <View>
-                <Text>Imagen</Text>
+             <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/corrientesTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
             Corrientes
         </Text>
     </TouchableOpacity>

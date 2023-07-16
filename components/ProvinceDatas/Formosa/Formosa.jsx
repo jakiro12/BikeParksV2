@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './formosaStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function FormosaParks(){
@@ -6,10 +6,10 @@ export default function FormosaParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('FormosaParks')}>
-            <View>
-                <Text>Imagen</Text>
+            <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/formosaTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
             formosa 
         </Text>
     </TouchableOpacity>

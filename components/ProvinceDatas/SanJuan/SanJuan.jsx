@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './sanjuanStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function SanJuanParks(){
@@ -6,10 +6,10 @@ export default function SanJuanParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('SanJuanParks')}>
-            <View>
-                <Text>Imagen</Text>
+             <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/sanjuanTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            San juan
         </Text>
     </TouchableOpacity>

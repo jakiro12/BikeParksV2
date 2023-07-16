@@ -9,6 +9,19 @@ export default provinceStyles=StyleSheet.create({
         borderRadius:10,
         display:'flex',
         alignItems:'center',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        overflow:'hidden'
+    },
+    imgContainer:{
+        height:'80%',
+        width:'100%',
+    },
+    imgLogoSize:{
+        width:'100%',
+      height:'100%',
+      resizeMode:'stretch',
+    },
+    provinceName:{
+        fontSize:20
     }
 })

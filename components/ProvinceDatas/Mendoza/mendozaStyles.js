@@ -10,6 +10,20 @@ export default provinceStyles=StyleSheet.create({
         display:'flex',
         flexDirection:'column',
         justifyContent:'space-between',
-        alignItems:'center'
+        alignItems:'center',
+        overflow:'hidden'
+    },
+    imgContainer:{
+        height:'80%',
+        width:'100%',
+    },
+    imgLogoSize:{
+        width:'100%',
+      height:'100%',
+      resizeMode:'stretch',
+    },
+    provinceName:{
+        fontSize:20
     }
+    
 })

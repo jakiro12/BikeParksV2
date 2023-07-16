@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './tucumanStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function TucumanParks(){
@@ -6,10 +6,10 @@ export default function TucumanParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('TucumanParks')}>
-            <View>
-                <Text>Imagen</Text>
+           <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/tucumanTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            Tucuman
         </Text>
     </TouchableOpacity>

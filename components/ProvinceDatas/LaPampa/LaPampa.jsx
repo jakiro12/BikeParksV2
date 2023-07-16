@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './lapampaStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function LaPampaParks(){
@@ -6,10 +6,10 @@ export default function LaPampaParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('LaPampaParks')}>
-            <View>
-                <Text>Imagen</Text>
+              <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/lapampaTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            La Pampa
         </Text>
     </TouchableOpacity>

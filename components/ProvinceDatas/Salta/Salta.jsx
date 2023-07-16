@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './saltaStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function SaltaParks(){
@@ -6,10 +6,10 @@ export default function SaltaParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('SaltaParks')}>
-            <View>
-                <Text>Imagen</Text>
+              <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/saltaTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            Salta
         </Text>
     </TouchableOpacity>

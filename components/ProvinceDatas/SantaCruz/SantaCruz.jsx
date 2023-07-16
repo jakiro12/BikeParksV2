@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './santacruzStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function SantaCruzParks(){
@@ -6,10 +6,10 @@ export default function SantaCruzParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('SantaCruzParks')}>
-            <View>
-                <Text>Imagen</Text>
+             <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/santacruzTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            Santa cruz
         </Text>
     </TouchableOpacity>

@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './santiagodelesteroStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function SantiagoDelEsteroParks(){
@@ -6,11 +6,11 @@ export default function SantiagoDelEsteroParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('SantiagoDelEsteroParks')}>
-            <View>
-                <Text>Imagen</Text>
+           <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/santiagodelesteroTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
-           Santiago del Estero 
+        <Text style={styles.provinceName}>
+           S. del Estero 
         </Text>
     </TouchableOpacity>
     )

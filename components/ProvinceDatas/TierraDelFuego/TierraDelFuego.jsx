@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './tierradelfuegoStyles';
 import { useNavigation } from "@react-navigation/native";
 export default function TierraDelFuegoParks(){
@@ -6,10 +6,10 @@ export default function TierraDelFuegoParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('TierraDelFuegoParks')}>
-            <View>
-                <Text>Imagen</Text>
+           <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/tierradelfuegoTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
+        <Text style={styles.provinceName}>
            Tierra del Fuego
         </Text>
     </TouchableOpacity>

@@ -1,4 +1,4 @@
-import { Text,TouchableOpacity,View } from "react-native";
+import { Text,TouchableOpacity,View,Image } from "react-native";
 import styles from './chubutStyles.js';
 import { useNavigation } from "@react-navigation/native";
 export default function ChubutParks(){
@@ -6,11 +6,11 @@ export default function ChubutParks(){
 
     return(
         <TouchableOpacity style={styles.boxProvince} activeOpacity={1} onPress={()=> navigation.navigate('ChubutParks')}>
-            <View>
-                <Text>Imagen</Text>
+              <View style={styles.imgContainer}>
+            <Image source={require('../../ImagesExamples/LogosProvincias/chubutTint.png')} style={styles.imgLogoSize} />
             </View>
-        <Text>
-            chubut parques
+        <Text style={styles.provinceName}>
+            Chubut
         </Text>
     </TouchableOpacity>
     )
