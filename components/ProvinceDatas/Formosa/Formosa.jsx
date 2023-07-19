@@ -10,7 +10,7 @@ export default function FormosaParks(){
             <Image source={require('../../ImagesExamples/LogosProvincias/formosaTint.png')} style={styles.imgLogoSize} />
             </View>
         <Text style={styles.provinceName}>
-            formosa 
+            Formosa 
         </Text>
     </TouchableOpacity>
     )

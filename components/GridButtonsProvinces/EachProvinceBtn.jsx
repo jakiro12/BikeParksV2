@@ -1,4 +1,4 @@
-import { View,Text,TouchableOpacity,ScrollView,StatusBar } from "react-native";
+import { View,ScrollView,StatusBar } from "react-native";
 import styles from './gridStyles.js';
 import SantaFeParks from "../ProvinceDatas/SantaFe/SantaFe.jsx";
 import BuenosAiresParks from "../ProvinceDatas/BuenosAires/BuenosAires.jsx";

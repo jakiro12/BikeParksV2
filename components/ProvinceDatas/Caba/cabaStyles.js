@@ -4,13 +4,12 @@ export default provinceStyles=StyleSheet.create({
     boxProvince:{
         width:'45%',
         height:'100%',
-        borderColor:'#000000',
-        borderWidth:2,
         borderRadius:10,
         display:'flex',
         alignItems:'center',
         justifyContent:'space-between',
-        overflow:'hidden'
+        overflow:'hidden',
+        backgroundColor:'#0a7eaa'
     },
     imgContainer:{
         height:'80%',
@@ -20,6 +19,7 @@ export default provinceStyles=StyleSheet.create({
         width:'100%',
       height:'100%',
       resizeMode:'stretch',
+      tintColor:'#ffffff'
     },
     provinceName:{
         fontSize:20
