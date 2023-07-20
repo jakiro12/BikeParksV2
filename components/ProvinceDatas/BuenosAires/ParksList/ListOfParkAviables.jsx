@@ -1,4 +1,4 @@
-import { View,Text,ScrollView,TouchableOpacity,Image,Modal } from "react-native";
+import { View,Text,ScrollView,TouchableOpacity,Image,Modal,ImageBackground } from "react-native";
 import styles from './styleList.js';
 import { useState } from "react";
 const {OpenMap,BikeParksData}=require('./MapParks');
@@ -6,6 +6,7 @@ export default function SeeAllParksInBuenosAires (){
     const[show,setShow] = useState('')
     return(
         <View style={styles.contianerList}>
+            <ImageBackground style={styles.bckImage} source={require('../../../ImagesExamples/fondoBpark.png')} resizeMode="cover" >
           <ScrollView style={styles.scrollContainer} decelerationRate={0.9} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
             <View style={styles.parkBox}>
                 <View style={styles.boxInfo}>
@@ -1848,6 +1849,7 @@ export default function SeeAllParksInBuenosAires (){
                 </Modal>
             </View>
           </ScrollView>
+          </ImageBackground>
             </View>
     )
 }

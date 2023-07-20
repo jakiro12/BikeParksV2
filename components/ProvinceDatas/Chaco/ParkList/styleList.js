@@ -61,12 +61,19 @@ export default listParks=StyleSheet.create({
       height:'100%',
       display:'flex',
       justifyContent:'center',
-      alignItems:'center'
+      alignItems:'center',
+      backgroundColor:'#03c04a',
+
      },
      boxModalPhoto:{
       width:'90%',
       height:'50%',
-      borderColor:'#000000',
-      borderWidth:2,
+     },
+     bckImage:{
+      display:'flex',
+      justifyContent:'center',
+      width:'100%',
+      height:'100%',
+      alignItems:'center'
      }
 })

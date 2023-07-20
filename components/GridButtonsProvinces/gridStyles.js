@@ -20,5 +20,12 @@ export default gridStylesBtns = StyleSheet.create({
     scrollContainer:{
         width:'90%',
         height:'90%',
-    }
+    },
+     bckImage:{
+      display:'flex',
+      justifyContent:'center',
+      width:'100%',
+      height:'100%',
+      alignItems:'center'
+     }
 })

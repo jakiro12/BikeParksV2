@@ -1,4 +1,4 @@
-import { View,ScrollView,StatusBar } from "react-native";
+import { View,ScrollView,StatusBar,ImageBackground } from "react-native";
 import styles from './gridStyles.js';
 import SantaFeParks from "../ProvinceDatas/SantaFe/SantaFe.jsx";
 import BuenosAiresParks from "../ProvinceDatas/BuenosAires/BuenosAires.jsx";
@@ -28,6 +28,7 @@ export default function AllProvincesBtns (){
     return(
       <View  style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#E3E4D3"  />
+      <ImageBackground source={require('../ImagesExamples/fondoBpark.png')} resizeMode="cover" style={styles.bckImage}>
       <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps='never' contentContainerStyle={{alignItems:'center',paddingBottom:10}}>
    <View style={styles.boxProvinces}>
         <BuenosAiresParks/>
@@ -78,10 +79,7 @@ export default function AllProvincesBtns (){
     <TucumanParks/>
 </View>
         </ScrollView>
-
-
-
-
+        </ImageBackground>
         </View>
     )
 }
