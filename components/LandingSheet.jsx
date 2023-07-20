@@ -1,4 +1,4 @@
-import { View,Text,StatusBar,TouchableOpacity } from "react-native";
+import { View,Text,StatusBar,TouchableOpacity,ImageBackground } from "react-native";
 import styles from './landingStyles.js';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -30,18 +30,20 @@ import SeeAllParksInTucuman from "./ProvinceDatas/Tucuman/ParkList/ListOfParksAv
 function LandingPageInformation ({navigation}){
     return(
         <View style={styles.contianer}>
+            <ImageBackground source={require('./ImagesExamples/fondoBpark.png')} resizeMode="cover" style={styles.bckImage}>
         <StatusBar barStyle="dark-content" backgroundColor="#E3E4D3"  />
         <View style={styles.infoContainer}>
-            <Text>
+            <Text style={styles.textDescribe}>
                 En esta aplicacion podras encontrar todos los skatepark y bikepark del pais 
-                para ir a conocerlos, recuerda usar casco!!!
+                para ir a conocerlos; recuerda usar casco!!!
             </Text>
         </View>
         <View style={styles.btnContainer}>
         <TouchableOpacity activeOpacity={1} style={styles.btnSGetIn} onPress={()=>{navigation.navigate('AllProvinces')}}>
-       <Text style={styles.textBtn}>Open!</Text>
+       <Text style={styles.textBtn}>Buscar</Text>
         </TouchableOpacity>
         </View>
+        </ImageBackground>
      </View>
     )
 }

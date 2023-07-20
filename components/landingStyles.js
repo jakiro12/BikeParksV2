@@ -11,32 +11,45 @@ export default stylesLogin = StyleSheet.create({
         alignItems:'center'
     },
     textBtn:{
-        color:'#000000',
+        color:'#ffffff',
         fontSize:18,
     },
     btnSGetIn:{
         width:100,
         height:40,
-        borderColor:'#000000',
+        borderColor:'#ffffff',
         borderWidth:2,
         borderRadius:10,
         display:'flex',
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        backgroundColor:'#03c04a',
     },
     infoContainer:{
         width:'90%',
         height:'50%',
-        borderColor:'#000000',
-        borderWidth:2,
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
     },
     btnContainer:{
         width:'90%',
         height:'30%',
-        borderWidth:2,
-        borderColor:'#000000',
         display:'flex',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+    },
+    textDescribe:{
+        fontSize:24,
+        textAlign:'center',
+        color:'#ffffff',
+        fontWeight:'bold'
+    },
+    bckImage:{
+     display:'flex',
+     justifyContent:'center',
+     width:'100%',
+     height:'100%',
+     alignItems:'center'
     }
 })
